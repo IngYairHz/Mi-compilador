@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:Width="800" d:Height="450"
+        x:Class="AvaloniaApplication3.MainWindow"
+        Title="Editor de Texto">
+    <DockPanel>
+        <!-- Menú Superior -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Archivo">
+                <MenuItem Header="Nuevo" Name="MenuNuevo"/>
+                <MenuItem Header="Abrir" Name="MenuAbrir"/>
+                <MenuItem Header="Guardar" Name="MenuGuardar"/>
+                <MenuItem Header="Compilar" Name="MenuCompilar"/>
+                <MenuItem Header="Salir" Name="MenuSalir"/>
+            </MenuItem>
+        </Menu>
+        
+        <!-- Área de Texto -->
+        <TextBox Name="MainTextBox" AcceptsReturn="True" TextWrapping="Wrap"/>
+    </DockPanel>
+</Window>
